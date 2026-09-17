@@ -169,10 +169,10 @@ a.percentagebar {
 .ct-chart .ct-line { stroke-width: 2px !important; }
 .ct-chart .ct-point { stroke-width: 6px !important; transition: stroke-width .2s; }
 .ct-chart .ct-point:hover { stroke-width: 10px !important; }
-.ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-point { stroke: #0078D4 !important;}
-.ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-point { stroke: #1c2298 !important;}
-.ct-chart .ct-series.ct-series-c .ct-line, .ct-chart .ct-series.ct-series-c .ct-point { stroke: #0aad0a !important;}
-.ct-chart .ct-series.ct-series-d .ct-line, .ct-chart .ct-series.ct-series-d .ct-point { stroke: #FF6A00 !important;}
+.ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-point, .ct-chart .ct-series.ct-series-a .ct-bar { stroke: #0078D4 !important;}
+.ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-point, .ct-chart .ct-series.ct-series-b .ct-bar { stroke: #1c2298 !important;}
+.ct-chart .ct-series.ct-series-c .ct-line, .ct-chart .ct-series.ct-series-c .ct-point, .ct-chart .ct-series.ct-series-c .ct-bar { stroke: #0aad0a !important;}
+.ct-chart .ct-series.ct-series-d .ct-line, .ct-chart .ct-series.ct-series-d .ct-point, .ct-chart .ct-series.ct-series-d .ct-bar { stroke: #FF6A00 !important;}
 
 .tinylinecoveragechart, .tinybranchcoveragechart, .tinymethodcoveragechart, .tinyfullmethodcoveragechart { background-color: #fff; margin-left: -3px; float: left; border: 1px solid #c1c1c1; width: 30px; height: 18px; }
 .historiccoverageoffset { margin-top: 7px; }
@@ -605,10 +605,10 @@ a.percentagebar {
     .lightred { background-color: #954848; }
     .ct-label { color: #fff !important; fill: #fff !important; }
     .ct-grid{ stroke:#fff !important; }
-    .ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-point { stroke: #0078D4  !important; }
-    .ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-point { stroke: #6dc428 !important; }
-    .ct-chart .ct-series.ct-series-c .ct-line, .ct-chart .ct-series.ct-series-c .ct-point { stroke: #e58f1d !important; }
-    .ct-chart .ct-series.ct-series-d .ct-line, .ct-chart .ct-series.ct-series-d .ct-point { stroke: #c71bca !important; }
+    .ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-point, .ct-chart .ct-series.ct-series-a .ct-bar { stroke: #0078D4  !important; }
+    .ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-point, .ct-chart .ct-series.ct-series-b .ct-bar { stroke: #6dc428 !important; }
+    .ct-chart .ct-series.ct-series-c .ct-line, .ct-chart .ct-series.ct-series-c .ct-point, .ct-chart .ct-series.ct-series-c .ct-bar { stroke: #e58f1d !important; }
+    .ct-chart .ct-series.ct-series-d .ct-line, .ct-chart .ct-series.ct-series-d .ct-point, .ct-chart .ct-series.ct-series-d .ct-bar { stroke: #c71bca !important; }
 
     .linecoverage { background-color: #0078D4; }
     .branchcoverage { background-color: #6dc428; }
@@ -758,8 +758,8 @@ a.percentagebar {
 </colgroup>
 <thead><tr><th>Method</th><th>Branch coverage <a href="https://en.wikipedia.org/wiki/Code_coverage" target="_blank"><i class="icon-info-circled"></i></a></th><th>Crap Score <a href="https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" target="_blank"><i class="icon-info-circled"></i></a></th><th>Cyclomatic complexity <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity" target="_blank"><i class="icon-info-circled"></i></a></th><th>Line coverage <a href="https://en.wikipedia.org/wiki/Code_coverage" target="_blank"><i class="icon-info-circled"></i></a></th></tr></thead>
 <tbody>
-<tr><td title="AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action`1&lt;Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration&gt;)"><a href="#file0_line30" class="navigatetohash">AddMediatR(...)</a></td><td>100%</td><td>1</td><td>1</td><td>100%</td></tr>
-<tr><td title="AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration)"><a href="#file0_line46" class="navigatetohash">AddMediatR(...)</a></td><td>100%</td><td>2</td><td>2</td><td>100%</td></tr>
+<tr><td title="AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action&lt;Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration&gt;)"><a href="#file0_line30" class="navigatetohash">AddMediatR(...)</a></td><td>100%</td><td>1</td><td>1</td><td>100%</td></tr>
+<tr><td title="AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration)"><a href="#file0_line46" class="navigatetohash">AddMediatR(...)</a></td><td>100%</td><td>2</td><td>2</td><td>100%</td></tr>
 </tbody>
 </table>
 </div>
@@ -798,13 +798,13 @@ a.percentagebar {
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line27"></a><code>27</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;returns&gt;Service&nbsp;collection&lt;/returns&gt;</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line28"></a><code>28</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;IServiceCollection&nbsp;AddMediatR(this&nbsp;IServiceCollection&nbsp;services,</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line29"></a><code>29</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action&lt;MediatRServiceConfiguration&gt;&nbsp;configuration)</code></td></tr>
-<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line30"></a><code>30</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;{</code></td></tr>
-<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line31"></a><code>31</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;serviceConfig&nbsp;=&nbsp;new&nbsp;MediatRServiceConfiguration();</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line30"></a><code>30</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;{</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line31"></a><code>31</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;serviceConfig&nbsp;=&nbsp;new&nbsp;MediatRServiceConfiguration();</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line32"></a><code>32</code></td><td></td><td class="lightgray"><code></code></td></tr>
-<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line33"></a><code>33</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;configuration.Invoke(serviceConfig);</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line33"></a><code>33</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;configuration.Invoke(serviceConfig);</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line34"></a><code>34</code></td><td></td><td class="lightgray"><code></code></td></tr>
-<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line35"></a><code>35</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;services.AddMediatR(serviceConfig);</code></td></tr>
-<tr class="coverableline" title="Covered (79 visits)" data-coverage="{'AllTestMethods': {'VC': '79', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">79</td><td class="rightmargin right"><a id="file0_line36"></a><code>36</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line35"></a><code>35</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;services.AddMediatR(serviceConfig);</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line36"></a><code>36</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line37"></a><code>37</code></td><td></td><td class="lightgray"><code></code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line38"></a><code>38</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;summary&gt;</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line39"></a><code>39</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;Registers&nbsp;handlers&nbsp;and&nbsp;mediator&nbsp;types&nbsp;from&nbsp;the&nbsp;specified&nbsp;assemblies</code></td></tr>
@@ -814,30 +814,30 @@ a.percentagebar {
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line43"></a><code>43</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;returns&gt;Service&nbsp;collection&lt;/returns&gt;</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line44"></a><code>44</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;IServiceCollection&nbsp;AddMediatR(this&nbsp;IServiceCollection&nbsp;services,</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line45"></a><code>45</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MediatRServiceConfiguration&nbsp;configuration)</code></td></tr>
-<tr class="coverableline" title="Covered (91 visits)" data-coverage="{'AllTestMethods': {'VC': '91', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">91</td><td class="rightmargin right"><a id="file0_line46"></a><code>46</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;{</code></td></tr>
-<tr class="coverableline" title="Covered (91 visits, 2 of 2 branches are covered)" data-coverage="{'AllTestMethods': {'VC': '91', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">91</td><td class="rightmargin right"><a id="file0_line47"></a><code>47</code></td><td class="percentagebar percentagebar100"><i class="icon-fork"></i></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(configuration.AssembliesToRegister.Count&nbsp;==&nbsp;0)</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line46"></a><code>46</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;{</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits, 2 of 2 branches are covered)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line47"></a><code>47</code></td><td class="percentagebar percentagebar100"><i class="icon-fork"></i></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(configuration.AssembliesToRegister.Count&nbsp;==&nbsp;0)</code></td></tr>
 <tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line48"></a><code>48</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</code></td></tr>
 <tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line49"></a><code>49</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;ArgumentException(&quot;No&nbsp;assemblies&nbsp;found&nbsp;to&nbsp;scan.&nbsp;Supply&nbsp;at&nbsp;least&nbsp;one&nbsp;assembly&nbsp;to&nbsp;scan&nbsp;for&nbsp;handlers.</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line50"></a><code>50</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line51"></a><code>51</code></td><td></td><td class="lightgray"><code></code></td></tr>
-<tr class="coverableline" title="Covered (90 visits)" data-coverage="{'AllTestMethods': {'VC': '90', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">90</td><td class="rightmargin right"><a id="file0_line52"></a><code>52</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServiceRegistrar.SetGenericRequestHandlerRegistrationLimitations(configuration);</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line52"></a><code>52</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServiceRegistrar.SetGenericRequestHandlerRegistrationLimitations(configuration);</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line53"></a><code>53</code></td><td></td><td class="lightgray"><code></code></td></tr>
-<tr class="coverableline" title="Covered (90 visits)" data-coverage="{'AllTestMethods': {'VC': '90', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">90</td><td class="rightmargin right"><a id="file0_line54"></a><code>54</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServiceRegistrar.AddMediatRClassesWithTimeout(services,&nbsp;configuration);</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line54"></a><code>54</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServiceRegistrar.AddMediatRClassesWithTimeout(services,&nbsp;configuration);</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line55"></a><code>55</code></td><td></td><td class="lightgray"><code></code></td></tr>
-<tr class="coverableline" title="Covered (86 visits)" data-coverage="{'AllTestMethods': {'VC': '86', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">86</td><td class="rightmargin right"><a id="file0_line56"></a><code>56</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServiceRegistrar.AddRequiredServices(services,&nbsp;configuration);</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line56"></a><code>56</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServiceRegistrar.AddRequiredServices(services,&nbsp;configuration);</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line57"></a><code>57</code></td><td></td><td class="lightgray"><code></code></td></tr>
-<tr class="coverableline" title="Covered (86 visits)" data-coverage="{'AllTestMethods': {'VC': '86', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">86</td><td class="rightmargin right"><a id="file0_line58"></a><code>58</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;services;</code></td></tr>
-<tr class="coverableline" title="Covered (86 visits)" data-coverage="{'AllTestMethods': {'VC': '86', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">86</td><td class="rightmargin right"><a id="file0_line59"></a><code>59</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line58"></a><code>58</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;services;</code></td></tr>
+<tr class="coverableline" title="Covered (1 visits)" data-coverage="{'AllTestMethods': {'VC': '1', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">1</td><td class="rightmargin right"><a id="file0_line59"></a><code>59</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line60"></a><code>60</code></td><td></td><td class="lightgray"><code>}</code></td></tr>
 </tbody>
 </table>
 </div>
-<div class="footer">Generated by: ReportGenerator 5.5.0.0<br />30.11.2025 - 3.21.34<br /><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="https://reportgenerator.io">reportgenerator.io</a></div></div>
+<div class="footer">Generated by: ReportGenerator 5.5.6.0<br />17.9.2026 - 19.00.25<br /><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="https://reportgenerator.io">reportgenerator.io</a></div></div>
 <div class="containerright">
 <div class="containerrightfixed">
 <h1>Methods/Properties</h1>
-<a href="#file0_line30" class="navigatetohash percentagebar percentagebar100" title="Line coverage: 100% - AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action`1&lt;Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration&gt;)"><i class="icon-cube"></i>AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action`1&lt;Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration&gt;)</a><br />
-<a href="#file0_line46" class="navigatetohash percentagebar percentagebar100" title="Line coverage: 100% - AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration)"><i class="icon-cube"></i>AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration)</a><br />
+<a href="#file0_line30" class="navigatetohash percentagebar percentagebar100" title="Line coverage: 100% - AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action&lt;Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration&gt;)"><i class="icon-cube"></i>AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action&lt;Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration&gt;)</a><br />
+<a href="#file0_line46" class="navigatetohash percentagebar percentagebar100" title="Line coverage: 100% - AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration)"><i class="icon-cube"></i>AddMediatR(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration)</a><br />
 <br/></div>
 </div></div>
 <script type="text/javascript">/* <![CDATA[ */ /* Chartist.js 0.11.4
@@ -1049,5 +1049,82 @@ var renderChart = function (chart) {
 var charts = document.getElementsByClassName('historychart');
 for (i = 0, l = charts.length; i < l; i++) {
     renderChart(charts[i]);
+}
+
+/* History diff charts */
+var renderDiffChart = function (chart) {
+    // Remove current children (e.g. PNG placeholder)
+    while (chart.firstChild) {
+        chart.firstChild.remove();
+    }
+
+    var chartData = window[chart.getAttribute('data-data')];
+    var options = {
+        low: -chartData.minMaxValue,
+        high: chartData.minMaxValue,
+        axisY: {
+            onlyInteger: true
+        }
+    };
+    var barChart = new Chartist.Bar(chart, {
+        series: chartData.series
+    }, options);
+
+    var tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.innerHTML = chartData.tooltip;
+
+    chart.appendChild(tooltip);
+
+    /* Tooltips */
+    /* Tooltips */
+    var showToolTip = function () {
+        var index = this.getAttribute('ct:meta');
+
+        tooltip.innerHTML = chartData.tooltips[index];
+        tooltip.style.display = 'block';
+    };
+
+    var moveToolTip = function (event) {
+        var box = chart.getBoundingClientRect();
+        var left = event.pageX - box.left - window.pageXOffset;
+        var top = event.pageY - box.top - window.pageYOffset;
+
+        left = left + 20;
+        top = top - tooltip.offsetHeight / 2;
+
+        if (left + tooltip.offsetWidth > box.width) {
+            left -= tooltip.offsetWidth + 40;
+        }
+
+        if (top < 0) {
+            top = 0;
+        }
+
+        if (top + tooltip.offsetHeight > box.height) {
+            top = box.height - tooltip.offsetHeight;
+        }
+
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = top + 'px';
+    };
+
+    var hideToolTip = function () {
+        tooltip.style.display = 'none';
+    };
+    chart.addEventListener('mousemove', moveToolTip);
+
+    barChart.on('created', function () {
+        var chartBars = chart.getElementsByClassName('ct-bar');
+        for (i = 0, l = chartBars.length; i < l; i++) {
+            chartBars[i].addEventListener('mousemove', showToolTip);
+            chartBars[i].addEventListener('mouseout', hideToolTip);
+        }
+    });
+};
+
+var charts = document.getElementsByClassName('historydiffchart');
+for (i = 0, l = charts.length; i < l; i++) {
+    renderDiffChart(charts[i]);
 } /* ]]> */ </script>
 </body></html>
