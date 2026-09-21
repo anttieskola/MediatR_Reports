@@ -2,7 +2,7 @@
 
 |||
 |:---|:---|
-| Generated on: | 19.9.2026 - 19.52.24 |
+| Generated on: | 21.9.2026 - 17.18.28 |
 | Parser: | Cobertura |
 | Assemblies: | 1 |
 | Classes: | 32 |
@@ -12,8 +12,8 @@
 | Uncovered lines: | 110 |
 | Coverable lines: | 1240 |
 | Total lines: | 2148 |
-| **Branch coverage:** | 81.7% (453 of 554) |
-| Covered branches: | 453 |
+| **Branch coverage:** | 82.3% (456 of 554) |
+| Covered branches: | 456 |
 | Total branches: | 554 |
 | **Method coverage:** | [Feature is only available for sponsors](https://reportgenerator.io/pro) |
 
@@ -26,7 +26,7 @@
 
 | **Name** | **Covered** | **Uncovered** | **Coverable** | **Total** | **Line coverage** | **Covered** | **Total** | **Branch coverage** |
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|
-| **MediatR** | **1130** | **110** | **1240** | **3133** | **91.1%** | **453** | **554** | **81.7%** |
+| **MediatR** | **1130** | **110** | **1240** | **3133** | **91.1%** | **456** | **554** | **82.3%** |
 | MediatR.Entities.OpenBehavior | 16 | 0 | 16 | 56 | 100% | 8 | 8 | 100% |
 | MediatR.Internal.HandlersOrderer | 25 | 5 | 30 | 50 | 83.3% | 17 | 20 | 85% |
 | MediatR.Internal.HandlersOrderer<TRequest> | 25 | 5 | 30 | 50 | 83.3% | 17 | 20 | 85% |
@@ -47,7 +47,7 @@
 | MediatR.Pipeline.RequestPostProcessorBehavior<TRequest, TResponse> | 8 | 0 | 8 | 25 | 100% | 2 | 2 | 100% |
 | MediatR.Pipeline.RequestPreProcessorBehavior<TRequest, TResponse> | 1 | 0 | 1 | 23 | 100% | 0 | 0 |  |
 | MediatR.Pipeline.RequestPreProcessorBehavior<TRequest, TResponse> | 7 | 0 | 7 | 23 | 100% | 2 | 2 | 100% |
-| MediatR.Registration.ServiceRegistrar | 296 | 30 | 326 | 473 | 90.7% | 144 | 164 | 87.8% |
+| MediatR.Registration.ServiceRegistrar | 296 | 30 | 326 | 473 | 90.7% | 147 | 164 | 89.6% |
 | MediatR.Unit | 27 | 0 | 27 | 145 | 100% | 0 | 0 |  |
 | MediatR.Wrappers.NotificationHandlerWrapperImpl<TNotification> | 1 | 0 | 1 | 34 | 100% | 0 | 0 |  |
 | MediatR.Wrappers.NotificationHandlerWrapperImpl<TNotification> | 5 | 0 | 5 | 34 | 100% | 2 | 2 | 100% |
